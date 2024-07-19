@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>calc</h1>
+        <div class="switch-con">
+          <p>THEME</p>
+          <div class="tick-con">
+            <button class="tick tick-fir" id="toggle1"></button>
+            <button class="tick tick-sec" id="toggle2"></button>
+            <button class="tick tick-thir" id="toggle3"></button>
+          </div>
+        </div>
+      </header>
+      <div class="cal-container">
+        <br />
+        <form id="calculator-form" action="">
+          <input type="text" id="screen" value="" />
+          <div class="second-con">
+            <button class="btn btnn" onclick="addToScreen(event, '7')">7</button>
+            <button class="btn btnn" onclick="addToScreen(event, '8')">8</button>
+            <button class="btn btnn" onclick="addToScreen(event, '9')">9</button>
+            <button class="btn btnn" onclick="addToScreen(event, 'C')" style="background-color: hsl(225, 21%, 49%); color: white">DEL</button>
+            <br />
+            <button class="btn btnn" onclick="addToScreen(event, '4')">4</button>
+            <button class="btn btnn" onclick="addToScreen(event, '5')">5</button>
+            <button class="btn btnn" onclick="addToScreen(event, '6')">6</button>
+            <button class="btn btnn" onclick="addToScreen(event, '+')">+</button>
+            <br />
+            <button class="btn btnn" onclick="addToScreen(event, '1')">1</button>
+            <button class="btn btnn" onclick="addToScreen(event, '2')">2</button>
+            <button class="btn btnn" onclick="addToScreen(event, '3')">3</button>
+            <button class="btn btnn" onclick="addToScreen(event, '-')">-</button>
+            <br />
+            <button class="btn btnn" onclick="addToScreen(event, '.')">.</button>
+            <button class="btn btnn" onclick="addToScreen(event, '0')">0</button>
+            <button class="btn btnn" onclick="addToScreen(event, '/')">/</button>
+            <button class="btn btnn" onclick="addToScreen(event, '*')">x</button>
+            <br />
+            <button onclick="clearScreen(event)" class="btn bttn btnn" style="background-color: hsl(225, 21%, 49%); color: white">RESET</button>
+            <button class="btn bttn btnn" onclick="addToScreen(event, '=')">=</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
